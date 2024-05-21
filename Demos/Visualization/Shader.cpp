@@ -1,4 +1,10 @@
 #include "Shader.h"
+
+// This is already included but we did this so that
+// symbols are defined in this translation unit.
+#define GLAD_GL_IMPLEMENTATION
+#include <glad/gl.h>
+
 #include <iostream>
 #include <fstream>
 #include <sstream>

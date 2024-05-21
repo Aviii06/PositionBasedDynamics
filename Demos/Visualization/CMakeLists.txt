@@ -1,3 +1,6 @@
+# This is needed to include glad/gl.h
+include_directories( ../extern/glfw/deps/ )
+
 set(VIS_HEADER_FILES
 	${PROJECT_PATH}/Demos/Visualization/MiniGL.h
 	${PROJECT_PATH}/Demos/Visualization/Selection.h
@@ -5,10 +8,9 @@ set(VIS_HEADER_FILES
 	${PROJECT_PATH}/Demos/Visualization/Visualization.h
 	) 
 
-	
+
 set(VIS_SOURCE_FILES
-	${PROJECT_SOURCE_DIR}/extern/glfw/deps/glad_gl.c
-	${PROJECT_PATH}/Demos/Visualization/MiniGL.cpp                       
+	${PROJECT_PATH}/Demos/Visualization/MiniGL.cpp
 	${PROJECT_PATH}/Demos/Visualization/Shader.cpp
 	) 
 	
